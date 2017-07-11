@@ -1,7 +1,5 @@
 package kh.edu.app.myproject.lc_luncher;
 
-import android.app.LauncherActivity;
-import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +9,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import kh.edu.app.myproject.lc_luncher.DataModel.HomeText;
+import kh.edu.app.myproject.lc_luncher.DB.HomeText;
 
 /**
  * Created by Mork Pin on 6/6/2017.
@@ -27,7 +25,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
     }
 
     @Override
-    public HomeAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v= LayoutInflater.from(parent.getContext()).inflate(R.layout.viewholder_home,parent,false);
         ViewHolder viewHolder=new ViewHolder(v);// return new ViewHolder(v);
         return viewHolder;
@@ -36,8 +34,12 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
 
 
     @Override
-    public void onBindViewHolder(HomeAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(ViewHolder holder, int position) {
         HomeText homeText=homeTexts.get(position);
+        holder.txt_food.setText(homeText.getTxtFood());
+        holder.txt_price.setText(homeText.getTxtPrice());
+
+
 
 
 

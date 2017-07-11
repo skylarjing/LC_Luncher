@@ -1,25 +1,15 @@
 package kh.edu.app.myproject.lc_luncher;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-
-import kh.edu.app.myproject.lc_luncher.DataModel.HomeText;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -51,6 +41,7 @@ public class HomeActivity extends AppCompatActivity {
 
             }
         });
+
     }
 
 

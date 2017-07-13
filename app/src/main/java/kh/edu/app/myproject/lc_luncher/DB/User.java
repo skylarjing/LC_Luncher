@@ -8,17 +8,11 @@ public class User {
     public User(String phoneNumber, String passWord) {
         this.phoneNumber = phoneNumber;
         this.passWord = passWord;
-        this.gender = gender;
-        this.dob = dob;
-        this.username = username;
+
     }
 
     private String phoneNumber;
     private String passWord;
-    private String gender;
-    private String dob;
-    private String username;
-
 
 
     public String getPhoneNumber() {

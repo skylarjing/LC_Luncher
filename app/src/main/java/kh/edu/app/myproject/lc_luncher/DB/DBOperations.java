@@ -24,7 +24,7 @@ public class DBOperations extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String sql="create table"+TABLE_NAME+"(USERNAME TEXT, DOB TEXT, GENDER TEXT, PHONE_NUMBER INT, PASSWORD TEXT );";
+        String sql="create table "+TABLE_NAME+"(USERNAME TEXT, DOB TEXT, GENDER TEXT, PHONE_NUMBER INT, PASSWORD TEXT );";
         db.execSQL(sql);
         Log.d("Database Operations","Table is created");
     }
@@ -58,15 +58,17 @@ public class DBOperations extends SQLiteOpenHelper {
         return cursor;
     }*/
 
-    public User login(String _phnomnumber, String password) {
+    public User login(String Phonenumber, String password) {
         SQLiteDatabase SQ = getReadableDatabase();
-        String condition = "_username = ? and _password = ?";
-        String[] conditionArguments = {_phnomnumber, password};
-        Cursor cursor = SQ.query("tblUser", null, condition, conditionArguments, null, null, null);
+        String condition = "PHONE_NUMBER = ? and PASSWORD = ?";
+        String[] conditionArguments = {Phonenumber, password};
+        Cursor cursor = SQ.query("tblLC", null, condition, conditionArguments, null, null, null);
+        Log.d("ck","asd");
         if (cursor.getCount() > 0) {
             cursor.moveToFirst();
-            //int id=cursor.getInt(0);
-            User user = new User(_phnomnumber, password);
+            String phonenumber=cursor.getString(3);
+            String Password=cursor.getString(4);
+            User user = new User(phonenumber, Password);
             cursor.close();
             return user;
         } else {

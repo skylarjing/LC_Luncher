@@ -19,10 +19,10 @@ public class StartupActivity extends AppCompatActivity {
                 startHomeActivity();
                 finish();
             }
-        },2000);
+        },500);
     }
     private  void  startHomeActivity(){
-        Intent HomeIntent = new Intent(this,HomeActivity.class);
+        Intent HomeIntent = new Intent(this,LoginActivity.class);
         startActivity(HomeIntent);
     }
 }

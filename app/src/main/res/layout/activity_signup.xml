@@ -33,56 +33,64 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+
                         android:text="ឈ្មោះអ្នកប្រើប្រាស់*"
                         android:textSize="20dp" />
 
                     <EditText
                         android:layout_width="match_parent"
+                        android:id="@+id/res_username"
                         android:layout_height="50dp"
-                        android:paddingBottom="500dp" />
+                         />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="ឈ្មោះអ្នកប្រើប្រាស់*"
+                        android:text="លេខសំងាត់*"
                         android:textSize="20dp" />
 
                     <EditText
                         android:layout_width="match_parent"
+                        android:id="@+id/reg_password"
                         android:layout_height="50dp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="ឈ្មោះអ្នកប្រើប្រាស់*"
+                        android:text="ភេទ*"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/reg_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ថ្ងែខែឆ្នាំកំណើត*"
                         android:textSize="20dp" />
 
                     <EditText
                         android:layout_width="match_parent"
+                        android:id="@+id/reg_dob"
                         android:layout_height="50dp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="ឈ្មោះអ្នកប្រើប្រាស់*"
+                        android:text="លេខទួរស័ព្ទ*"
                         android:textSize="20dp" />
 
                     <EditText
                         android:layout_width="match_parent"
-                        android:layout_height="50dp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="ឈ្មោះអ្នកប្រើប្រាស់*"
-                        android:textSize="20dp" />
-
-                    <EditText
-                        android:layout_width="match_parent"
+                        android:id="@+id/reg_phone_number"
                         android:layout_height="50dp" />
 
                     <Button
                         android:layout_width="100dp"
+                        android:id="@+id/btn_reg"
                         android:layout_height="40dp"
                         android:layout_gravity="right"
                         android:gravity="right"

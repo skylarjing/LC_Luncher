@@ -24,7 +24,7 @@ public class DBOperations extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String sql="create table"+TABLE_NAME+"(USERNAME TEXT, DOB TEXT, GENDER TEXT, PHONE_NUMBER INT, PASSWORD TEXT );";
+        String sql="create table "+TABLE_NAME+"(USERNAME TEXT, DOB TEXT, GENDER TEXT, PHONE_NUMBER INT, PASSWORD TEXT );";
         db.execSQL(sql);
         Log.d("Database Operations","Table is created");
     }

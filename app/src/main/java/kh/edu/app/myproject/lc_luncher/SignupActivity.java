@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 import kh.edu.app.myproject.lc_luncher.DB.DBOperations;
 
-import static kh.edu.app.myproject.lc_luncher.R.id.reg_user_name;
+//import static kh.edu.app.myproject.lc_luncher.R.id.reg_user_name;
 
 public class SignupActivity extends AppCompatActivity {
     EditText Eusername,Edob,Egender,EphoneNumber,Epassword;
@@ -19,10 +19,11 @@ public class SignupActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Mydb=new DBOperations(SignupActivity.this);
         setContentView(R.layout.activity_signup);
-        Mydb=new DBOperations(this);
-        Eusername = (EditText) findViewById(reg_user_name);
-        Edob= (EditText) findViewById(R.id.reg_DOB);
+
+        Eusername = (EditText) findViewById(R.id.res_username);
+        Edob= (EditText) findViewById(R.id.reg_dob);
         Egender= (EditText) findViewById(R.id.reg_gender);
         EphoneNumber= (EditText) findViewById(R.id.reg_phone_number);
         Epassword= (EditText) findViewById(R.id.reg_password);

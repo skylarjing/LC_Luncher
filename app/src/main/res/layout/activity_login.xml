@@ -11,55 +11,72 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:paddingBottom="150dp"
-        android:paddingTop="50dp"
+        android:paddingTop="40dp"
         tools:layout_editor_absoluteY="8dp"
         tools:layout_editor_absoluteX="8dp">
 
         <LinearLayout
-            android:id="@+id/txt_box"
+
             android:layout_width="300dp"
-            android:layout_height="230dp"
+            android:layout_height="330dp"
             android:background="#ff4500"
             android:gravity="center">
 
             <LinearLayout
-                android:layout_width="297dp"
-                android:layout_height="227dp"
+
+                android:layout_width="295dp"
+                android:layout_height="326dp"
                 android:background="#fff"
-                android:gravity="center">
+                android:gravity="center"
+            >
 
                 <LinearLayout
                     android:layout_width="230dp"
-                    android:layout_height="200dp"
+                    android:layout_height="250dp"
                     android:orientation="vertical">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="ឈ្មោះអ្នកប្រើប្រាស់*"
+                        android:text="លេខទួរស័ព្ទ*"
                         android:textSize="20dp" />
 
                     <EditText
                         android:layout_width="match_parent"
+                        android:id="@+id/login_phone_number"
                         android:layout_height="50dp"
-                        android:paddingBottom="50dp" />
+                        android:text="lc"
+                        android:paddingBottom="0dp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="ឈ្មោះអ្នកប្រើប្រាស់*"
+                        android:text="លេខសំងាត់*"
                         android:textSize="20dp" />
 
                     <EditText
                         android:layout_width="match_parent"
+                        android:id="@+id/login_password"
+                        android:text="lc"
                         android:layout_height="50dp" />
-
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
                     <Button
                         android:layout_width="100dp"
                         android:layout_height="40dp"
-                        android:layout_gravity="right"
-                        android:gravity="right"
+                        android:id="@+id/btn_login"
+                        android:text="ចូលគណនី" />
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/btn_signup"
                         android:text="ចុះឈ្មោះ" />
+                    </LinearLayout>
+                    <Button
+                        android:text="asd"
+                        android:layout_width="100dp"
+                        android:layout_height="10dp" />
                 </LinearLayout>
 
             </LinearLayout>

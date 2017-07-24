@@ -20,9 +20,7 @@ import kh.edu.app.myproject.lc_luncher.DB.HomeText;
 public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
     private List<HomeText> homeTexts;
 
-    public HomeAdapter(List<HomeText> homeTexts) {
-        this.homeTexts = homeTexts;
-    }
+
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -38,11 +36,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
         HomeText homeText=homeTexts.get(position);
         holder.txt_food.setText(homeText.getTxtFood());
         holder.txt_price.setText(homeText.getTxtPrice());
-
-
-
-
-
+        holder.img_food.setImageResource(R.drawable.ic_cast_l);
 
     }
 
@@ -61,8 +55,9 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
             super(itemView);
             txt_food=(TextView)itemView.findViewById(R.id.txt_food);
             txt_price=(TextView)itemView.findViewById(R.id.txt_price);
-            img_food= (ImageView) itemView.findViewById(R.id.img_food);
+            //img_food= (ImageView) itemView.findViewById(R.id.img_food);
             img_black= (ImageView) itemView.findViewById(R.id.img_black);
+            img_food.setImageResource(R.drawable.ic_cast_l);
 
         }
     }

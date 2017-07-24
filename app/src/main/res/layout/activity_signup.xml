@@ -31,33 +31,35 @@
                     android:orientation="vertical">
 
                     <TextView
+
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-
                         android:text="ឈ្មោះអ្នកប្រើប្រាស់*"
                         android:textSize="20dp" />
 
                     <EditText
+                        android:id="@+id/reg_user_name"
+                        android:ems="20"
+                        android:hint="Enter User Name"
                         android:layout_width="match_parent"
-                        android:id="@+id/res_username"
                         android:layout_height="50dp"
                          />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="លេខសំងាត់*"
+                        android:text="ថ្ងៃ ខែ ឆ្នាំ កំណើត"
                         android:textSize="20dp" />
 
                     <EditText
+                        android:id="@+id/reg_DOB"
                         android:layout_width="match_parent"
-                        android:id="@+id/reg_password"
                         android:layout_height="50dp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="ភេទ*"
+                        android:text="ភេទ"
                         android:textSize="20dp" />
 
                     <EditText
@@ -66,36 +68,37 @@
                         android:layout_height="50dp" />
 
                     <TextView
-
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="ថ្ងែខែឆ្នាំកំណើត*"
+                        android:text="លេខទូរស័ព្ទ"
                         android:textSize="20dp" />
 
                     <EditText
+                        android:id="@+id/reg_phone_number"
                         android:layout_width="match_parent"
-                        android:id="@+id/reg_dob"
                         android:layout_height="50dp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="លេខទួរស័ព្ទ*"
+                        android:text="លេខសម្ងាត់"
                         android:textSize="20dp" />
 
                     <EditText
+                        android:id="@+id/reg_password"
+                        android:inputType="number"
                         android:layout_width="match_parent"
-                        android:id="@+id/reg_phone_number"
                         android:layout_height="50dp" />
 
                     <Button
-                        android:layout_width="100dp"
                         android:id="@+id/btn_reg"
+                        android:layout_width="100dp"
                         android:layout_height="40dp"
                         android:layout_gravity="right"
                         android:gravity="right"
-                        
-                        android:text="ចុះឈ្មោះ" />
+
+                        android:text="ចុះឈ្មោះ"
+                        />
                 </LinearLayout>
 
             </LinearLayout>

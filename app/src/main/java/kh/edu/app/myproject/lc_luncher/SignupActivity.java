@@ -9,24 +9,23 @@ import android.widget.Toast;
 
 import kh.edu.app.myproject.lc_luncher.DB.DBOperations;
 
-//import static kh.edu.app.myproject.lc_luncher.R.id.reg_user_name;
+import static kh.edu.app.myproject.lc_luncher.R.id.reg_user_name;
 
 public class SignupActivity extends AppCompatActivity {
-    EditText Eusername,Edob,Egender,EphoneNumber,Epassword;
+    EditText EUsername, EDob, EGender, EPhoneNumber, EPassword;
 
     DBOperations Mydb;
     Button Reg;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Mydb=new DBOperations(SignupActivity.this);
         setContentView(R.layout.activity_signup);
-
-        Eusername = (EditText) findViewById(R.id.res_username);
-        Edob= (EditText) findViewById(R.id.reg_dob);
-        Egender= (EditText) findViewById(R.id.reg_gender);
-        EphoneNumber= (EditText) findViewById(R.id.reg_phone_number);
-        Epassword= (EditText) findViewById(R.id.reg_password);
+        Mydb=new DBOperations(this);
+        EUsername = (EditText) findViewById(reg_user_name);
+        EDob= (EditText) findViewById(R.id.reg_DOB);
+        EGender= (EditText) findViewById(R.id.reg_gender);
+        EPhoneNumber= (EditText) findViewById(R.id.reg_phone_number);
+        EPassword= (EditText) findViewById(R.id.reg_password);
         Reg=(Button)findViewById(R.id.btn_reg);
         Register();
 
@@ -36,9 +35,9 @@ public class SignupActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        boolean InsData = Mydb.insertData(Eusername.getText().toString(),
-                                Edob.getText().toString(),Egender.getText().toString(),
-                                EphoneNumber.getText().toString(),Epassword.getText().toString());
+                        boolean InsData = Mydb.insertData(EUsername.getText().toString(),
+                                EDob.getText().toString(),EGender.getText().toString(),
+                                EPhoneNumber.getText().toString(),EPassword.getText().toString());
                         if(InsData==true){
                             Toast.makeText(SignupActivity.this ,"Register Successful",Toast.LENGTH_LONG).show();
                         }

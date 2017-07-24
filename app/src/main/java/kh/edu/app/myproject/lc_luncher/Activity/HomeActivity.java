@@ -1,4 +1,4 @@
-package kh.edu.app.myproject.lc_luncher;
+package kh.edu.app.myproject.lc_luncher.Activity;
 
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -16,6 +16,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
 import kh.edu.app.myproject.lc_luncher.DB.HomeText;
+import kh.edu.app.myproject.lc_luncher.R;
 
 public class HomeActivity extends AppCompatActivity {
 

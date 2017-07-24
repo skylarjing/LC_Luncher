@@ -1,4 +1,4 @@
-package kh.edu.app.myproject.lc_luncher;
+package kh.edu.app.myproject.lc_luncher.Activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +8,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import kh.edu.app.myproject.lc_luncher.DB.DBOperations;
+import kh.edu.app.myproject.lc_luncher.R;
 
 import static kh.edu.app.myproject.lc_luncher.R.id.reg_user_name;
 

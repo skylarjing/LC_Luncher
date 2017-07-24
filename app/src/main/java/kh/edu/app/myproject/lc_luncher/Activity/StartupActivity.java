@@ -1,10 +1,11 @@
-package kh.edu.app.myproject.lc_luncher;
+package kh.edu.app.myproject.lc_luncher.Activity;
 
 import android.support.v7.app.AppCompatActivity;
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import kh.edu.app.myproject.lc_luncher.R;
 
 
 public class StartupActivity extends AppCompatActivity {

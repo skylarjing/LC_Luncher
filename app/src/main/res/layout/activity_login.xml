@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="kh.edu.app.myproject.lc_luncher.LoginActivity">
+    tools:context="kh.edu.app.myproject.lc_luncher.Activity.LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

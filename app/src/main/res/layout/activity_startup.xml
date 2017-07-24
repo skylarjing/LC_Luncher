@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
 
     android:gravity="center"
-    tools:context="kh.edu.app.myproject.lc_luncher.StartupActivity">
+    tools:context="kh.edu.app.myproject.lc_luncher.Activity.StartupActivity">
 
 
     <ImageView

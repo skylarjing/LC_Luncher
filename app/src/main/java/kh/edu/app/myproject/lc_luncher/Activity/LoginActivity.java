@@ -1,7 +1,6 @@
-package kh.edu.app.myproject.lc_luncher;
+package kh.edu.app.myproject.lc_luncher.Activity;
 
 import android.content.Intent;
-import android.database.Cursor;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,6 +12,7 @@ import android.widget.Toast;
 
 import kh.edu.app.myproject.lc_luncher.DB.DBOperations;
 import kh.edu.app.myproject.lc_luncher.DB.User;
+import kh.edu.app.myproject.lc_luncher.R;
 
 public class LoginActivity extends AppCompatActivity {
     DBOperations mydb;

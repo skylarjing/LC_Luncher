@@ -5,9 +5,9 @@
 
 
         <item
-            android:id="@+id/mnu_home"
-            android:icon="@drawable/ic_home_l"
-            android:title="Home Page"/>
+            android:id="@+id/mnu_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile"/>
 
 
         <item
@@ -34,7 +34,7 @@
         <item
             android:id="@+id/mnu_cast"
             android:icon="@drawable/ic_cast_l"
-            android:title="Cast">
+            android:title="Cart">
 
         </item>
 

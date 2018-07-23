@@ -67,29 +67,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp" />
 
-                    <TextView
+                    <Spinner
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="លេខទូរស័ព្ទ"
-                        android:textSize="20dp" />
+                        android:id="@+id/sp_contact">
 
-                    <EditText
-                        android:id="@+id/reg_phone_number"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="លេខសម្ងាត់"
-                        android:textSize="20dp" />
-
-                    <EditText
-                        android:id="@+id/reg_password"
-                        android:inputType="number"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp" />
-
+                    </Spinner>
                     <Button
                         android:id="@+id/btn_reg"
                         android:layout_width="100dp"
@@ -97,7 +80,7 @@
                         android:layout_gravity="right"
                         android:gravity="right"
 
-                        android:text="ចុះឈ្មោះ"
+                        android:text="បន្ទាប់"
                         />
                 </LinearLayout>
 

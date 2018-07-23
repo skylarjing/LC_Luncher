@@ -16,21 +16,18 @@
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:id="@+id/toolbar_main"
+        android:backgroundTint="@color/LCcolor"
+        app:titleTextColor="#FFF"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorPrimary">
-
     </android.support.v7.widget.Toolbar>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/lyt_view"
+            android:layout_height="match_parent">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-            <android.support.v7.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:id="@+id/rclview_food"
-                android:layout_height="match_parent">
+        </FrameLayout>
 
-            </android.support.v7.widget.RecyclerView>
-    </FrameLayout>
 
     </LinearLayout>
     <android.support.design.widget.NavigationView

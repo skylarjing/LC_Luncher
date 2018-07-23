@@ -5,53 +5,74 @@ package kh.edu.app.myproject.lc_luncher.DB;
  */
 
 public class User {
-    public User(String phoneNumber, String passWord) {
+    public User(int id, String userName, String DOB, String gender, String phoneNumber, String passWord) {
+        this.userName = userName;
+        this.DOB = DOB;
+        this.id = id;
+        this.gender = gender;
         this.phoneNumber = phoneNumber;
         this.passWord = passWord;
 
     }
 
-    private String phoneNumber;
-    private String passWord;
+    private static String userName;
+    private static String DOB;
+    private static String gender;
+    private static String phoneNumber;
+    private static String passWord;
+    private static int id;
 
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public static int getId() {
+        return id;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public static void setId(int id) {
+        User.id = id;
     }
 
-    public String getPassWord() {
-        return passWord;
+
+
+    public static String getUserName() {
+        return userName;
     }
 
-    public void setPassWord(String passWord) {
-        this.passWord = passWord;
+    public static void setUserName(String userName) {
+        User.userName = userName;
     }
 
-    /*public String getGender() {
+    public static String getDOB() {
+        return DOB;
+    }
+
+    public static void setDOB(String DOB) {
+        User.DOB = DOB;
+    }
+
+    public static String getGender() {
         return gender;
     }
 
-    public void setGender(String gender) {
-        this.gender = gender;
+    public static void setGender(String gender) {
+        User.gender = gender;
     }
 
-    public String getDob() {
-        return dob;
+    public static String getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public void setDob(String dob) {
-        this.dob = dob;
+    public static void setPhoneNumber(String phoneNumber) {
+        User.phoneNumber = phoneNumber;
     }
 
-    public String getUsername() {
-        return username;
+    public static String getPassWord() {
+        return passWord;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
-    }*/
+    public static void setPassWord(String passWord) {
+        User.passWord = passWord;
+    }
+
+
+
 }

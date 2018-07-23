@@ -23,7 +23,7 @@ public class StartupActivity extends AppCompatActivity {
         },500);
     }
     private  void  startHomeActivity(){
-        Intent HomeIntent = new Intent(this,LoginActivity.class);
+        Intent HomeIntent = new Intent(this,MainActivity.class);
         startActivity(HomeIntent);
     }
 }
